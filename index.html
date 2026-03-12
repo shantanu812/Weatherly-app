@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="theme-toggle">
+        <button id="theme-btn" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <div class="app-main" id="parent">
+        <div class="left-panel">
+            <div class="header">
+                <h4>Weatherly</h4>
+            </div>
+            <div class="searchInputBox">
+                <input type="text" id="input-box" class="input-box" placeholder="Enter city name..." autocomplete="off">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div id="current-weather" class="current-weather">
+                <div class="placeholder-text">Search for a city to get started</div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div id="weather-details" class="weather-details">
+                </div>
+            
+            <div class="forecast-section" id="forecast-section" style="display: none;">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-container" class="forecast-container">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
